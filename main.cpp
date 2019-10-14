@@ -1,6 +1,11 @@
 #include <iostream>
 
+std::ostream&  printCPPVersion()
+{
+	return std::cout << __cplusplus;
+}
+
 int main(int argc, char* argv[])
 {
-	std::cout << __cplusplus;
+	printCPPVersion();
 }
